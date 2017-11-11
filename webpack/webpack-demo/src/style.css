@@ -1,0 +1,11 @@
+div {
+    color: red;
+    background: url('./test.jpg');
+}
+@font-face {
+    font-family: 'MyFont';
+    src:  url('./iconfont.eot') format('eot'),
+    url('./iconfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
