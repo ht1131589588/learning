@@ -1,4 +1,5 @@
 (function(){
+    //深拷贝
     function deepClone(obj){
         if(!obj || typeof obj !== 'object'){
             return;
@@ -17,9 +18,14 @@
         }
         return newObj;
     }
+
+    //防抖
+    function debounce(){
+        
+    }
     
-    var myFuncs = {
+    var toolFunc = {
         deepClone: deepClone
     }
-    return myFuncs;
+    
 }());
