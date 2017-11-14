@@ -73,6 +73,7 @@ window.onload = function(){
           return function() {
             var func = this.getAttribute('ng-click');
             scope[func](scope);
+            $scope.$digest();
             apply();
           }
       })(i);
@@ -84,6 +85,7 @@ window.onload = function(){
     var list = document.querySelectorAll('[ng-bind]');
     for(var i = 0;i<list.length;i++){
       var bindData = list[i].getAttribute('ng-bind');
+      //console.log('应用属性：' + bindData + '为' + scope[bindData]);
       list[i].innerHTML = scope[bindData];
     }
   }
