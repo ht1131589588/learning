@@ -4,21 +4,15 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-        app:'./src/index.js',
-        print:'./src/print.js'
-    },
-    devtool: 'inline-source-map',//定位错误的准确位置，仅在开发中用
-    devServer: {
-        contentBase: './dist'
+        app: './src/index.js'
     },
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'dist'),
-        publicPath: '/'
+        path: path.resolve(__dirname, 'dist')
     },
     plugins:[
         new HtmlWebpackPlugin({
-            title: 'Output Management'
+            title: 'Production'
         }),
         new CleanWebpackPlugin(['dist'])
     ]
