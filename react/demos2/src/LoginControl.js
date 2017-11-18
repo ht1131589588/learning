@@ -3,8 +3,15 @@ import Greeting from './Greeting';
 
 function LoginButton(props) {
     return (
-        <button>
-            
+        <button onClick={props.onClick}>
+            Login
+        </button>
+    );
+}
+function LogoutButton(props) {
+    return (
+        <button onClick={props.onClick}>
+            Logout
         </button>
     );
 }
@@ -12,6 +19,8 @@ function LoginButton(props) {
 export default class LoginControl extends React.Component {
     constructor(props) {
         super(props);
+        this.handleLoginClick = this.handleLoginClick.bind(this);
+        this.handleLogoutClick = this.handleLogoutClick.bind(this);
         this.state = {
             isLoggedIn: false
         }
@@ -25,14 +34,16 @@ export default class LoginControl extends React.Component {
     }
     render() {
         const isLoggedIn = this.state.isLoggedIn;
-
         let button = null;
         if (isLoggedIn) {
-            button = 
+            button = <LogoutButton onClick={this.handleLogoutClick}></LogoutButton>;
+        } else {
+            button = <LoginButton onClick={this.handleLoginClick}></LoginButton>;
         }
         return (
             <div>
-
+                <Greeting isLoggedIn = {isLoggedIn}/>
+                {button}
             </div>
         );
     }
