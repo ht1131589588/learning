@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import Clock from './demo1.js';
-import LoginControl from './LoginControl';
-import { Mailbox,Page, NumberList } from './demo3';
-
+// import LoginControl from './LoginControl';
+// import { Mailbox,Page, NumberList } from './demo3';
+// import { NameForm } from './form';
+import Calculator from './Calculator';
 /**
  * 
  */
@@ -17,8 +18,10 @@ ReactDOM.render(
         <Greeting isLoggedIn = {true} />
         <LoginControl />
         <Mailbox unreadMessages={messages} />
-        <Page /> */}
+        <Page /> 
         <NumberList numbers={numbers} />
+        <NameForm />*/}
+        <Calculator />
     </div>,
     document.getElementById('root')
 );
