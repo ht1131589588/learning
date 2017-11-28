@@ -8,6 +8,6 @@ learn
 
 1. 工厂模式
 
-- 介绍简单的工厂模式(https://www.cnblogs.com/bfwbfw/p/7661020.html)
+- [介绍简单的工厂模式](https://www.cnblogs.com/bfwbfw/p/7661020.html)
 
 2. 单体模式
