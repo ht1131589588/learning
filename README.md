@@ -1,5 +1,3 @@
-# learning
-learn
 # 我的收藏夹
 
 ## 设计模式
