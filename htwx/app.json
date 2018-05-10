@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#7B68EE",
+    "navigationBarTitleText": "古月的个人空间",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#fff",
+    "backgroundTextStyle":"dark",
+    "onReachBottomDistance":"50"
+  },
+  "tabBar":{
+    "color":"#888",
+    "backgroundColor":"#fff",
+    "selectedColor":"#444",
+    "position":"bottom",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"推荐",
+        "iconPath": "static/images/icon/home.png",
+        "selectedIconPath": "static/images/icon-red/home.png"
+      },
+      {
+        "pagePath":"pages/mine/mine",
+        "text":"我的",
+        "iconPath": "static/images/icon/people.png",
+        "selectedIconPath": "static/images/icon-red/people.png"
+      }
+    ]
+  }
+}
